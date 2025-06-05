@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Glenary's Restaurant</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        
+        .navbar {
+            background-color: #333;
+            color: white;
+            padding: 14px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar h1 {
+            margin: 0;
+            font-size: 20px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+            font-size: 14px;
+        }
+
+       
+        .container {
+            padding: 30px;
+        }
+
+        .container h2 {
+            margin-bottom: 400px;
+        }
+
+        .card {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .c1 {
+            border: 1px solid #ccc;
+            width: 300px;
+            padding: 15px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+
+        .c1 img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .c1 h3 {
+            margin: 10px 0 5px;
+        }
+
+        .c1 p {
+            font-size: 14px;
+            color: #333;
+        }
+
+        .price {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .container{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            margin-top: 50px;
+        }
+
+        .video h3{
+            margin-left: 240px;
+        }
+
+        iframe{
+            margin-left: 280px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <h1>Glenary's Restaurant</h1>
+        <div>
+            <a href="#">Menu</a>
+            <a href="#">Popular Dishes</a>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Menu</h2>
+        <div class="card">
+            <div class="c1">
+                <img src="./img/pizza.jpg" alt="Pizza Supreme">
+                <h3>Pizza Supreme</h3>
+                <p>Pizza sauce, mozzarella, bacon, onion, beef mince, capsicum, pepperoni, mushroom, olives</p>
+                <div class="price">Price: 250</div>
+            </div>
+
+            <div class="c1">
+                <img src="./img/paneer.jpg" alt="Paneer Tikka">
+                <h3>Paneer Tikka</h3>
+                <p>Paneer, Yogurt, Ground Spices, Bell Peppers, Onions, Baby Corn, Mushrooms</p>
+                <div class="price">Price: 200</div>
+            </div>
+        </div>
+    </div>
+    <div class="video">
+        <h3>Popular Dishes</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/2WlcigNREec" title="9 Easy Dinner Recipes" frameborder="0" allowfullscreen></iframe>
+
+    </div>
+
+</body>
+</html>
