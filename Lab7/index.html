@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">   
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>Change Colour</title>    
+  <style> 
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      width: 100%;
+    }
+
+    .container {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem; /* FIXED: added unit */
+      background-color: white;
+      transition: background-color 0.5s;
+    }
+
+    .container h1 {
+      color: black;
+      transition: color 0.5s;
+    }
+
+    .container button {
+      padding: 1rem 2rem;
+      border-radius: 20px;
+      outline: none;
+      border: 1px solid skyblue;
+      cursor: pointer;
+      background-color: white;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .container button:hover {
+      background-color: skyblue;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Change The Color</h1>
+    <button>Click Me</button>
+  </div>
+
+  <script>
+    const container = document.querySelector('.container');
+    const button = document.querySelector('button');
+    const h1 = document.querySelector('h1');
+    let isDark = false;
+
+    button.addEventListener('click', () => {
+      if (!isDark) {
+        container.style.backgroundColor = 'green';
+        h1.style.color = 'white';
+        isDark = true;
+      } else {
+        container.style.backgroundColor = 'white';
+        h1.style.color = 'green';
+        isDark = false;
+      }
+    });
+  </script>
+</body>
+</html>
